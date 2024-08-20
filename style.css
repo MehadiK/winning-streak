@@ -1,0 +1,80 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url("header.jpg") no-repeat center center fixed;
+}
+
+h1 {
+  font-size: 3rem;
+  color: whitesmoke;
+  margin: 0 auto;
+}
+
+hr {
+    margin: 20px auto;
+    color: darkred;
+    border: 3px solid darkred;
+    max-width: 65px;
+    opacity: 1;  
+}
+
+.buffer {
+  height: 10rem;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  border-radius: 200px;
+  background-color: darkred;
+  border-color: darkred;
+  font-size: 20px;
+  box-shadow: 2px 7px #999;
+  
+}
+
+.btn-primary:hover {  
+    background-color: #F05F44;  
+    border-color: #F05F44;  
+    --bs-btn-hover-bg: #ee4b08; 
+    --bs-btn-hover-border-color: #ee4b08;
+}
+
+/*.btn-primary:hover {
+  background-color: #FF9191;
+  color: darkred;
+  border-color: darkred;
+  width: 300px;
+}*/
+
+
+/* Extra styling. Possibly delete at the end of the project. */
+/*.btn-primary:active:after {
+  box-shadow: 0 2px #666;
+  color: yellow;
+  transform: translateY(1px);
+}*/
+
+/*.second-btn {
+  color: whitesmoke;
+  border-radius: 200px;
+  background-color: darkred;
+  border-color: darkred;
+  font-size: 20px;
+  box-shadow: 2px 7px #999;
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+
+.second-btn:hover {
+  background-color: #FF9191;
+  color: darkred;
+  border-color: darkred;
+  transform: scale(1.1, 1.1);
+}
+*/
+
