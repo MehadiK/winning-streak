@@ -1,80 +1,200 @@
-body,
 html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+}
+/* Header/Nav */
+.nav-link {
+  color: black;
+}
+
+/* Main container */
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slideshow {
+  margin: 20px 50px 20px 10px;
+  flex: 2;
+/*  background-color: red;*/
+  border-right: 5px solid lightgrey;
+  border-bottom: 5px solid lightgrey;
+  padding-right: 5em;
+  padding-bottom: 4em;
+
+}
+
+.main img {
+  object-fit: contain;
   width: 100%;
-  height: 100%;
-  font-family: 'Montserrat', sans-serif;
-  background: url("header.jpg") no-repeat center center fixed;
+  max-width: 100%;
+  height: 500px;
 }
 
-h1 {
-  font-size: 3rem;
-  color: whitesmoke;
-  margin: 0 auto;
+/* Main Section */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 4;
+/*  background-color: blue;*/
+  padding: 10px;
+  margin: 20px 0 ;
+  background-image: url("images/board.jpg");
+  background-size: cover;
+  border: 4px solid white;
+  border-radius: 10px;
+  position: relative;
+  isolation: isolate;
 }
 
-hr {
-    margin: 20px auto;
-    color: darkred;
-    border: 3px solid darkred;
-    max-width: 65px;
-    opacity: 1;  
+main::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: white;
+  opacity: .7;
 }
 
-.buffer {
-  height: 10rem;
+main p {
+/*  margin-right: 20%;*/
+  margin-top: 20px;
+  margin-left: 0;
+  font-size: 1.2em;
+  line-height: 1.7em;
+  text-align: center;
+  width: 70%;
+
+} 
+
+/* News Letter Section */
+
+.news-letter {
+  margin-top: 5em;
+  font-family: sans-serif;
 }
 
-.btn-xl {
-  padding: 1rem 2rem;
+.news-letter > h2 {
+  display: inline-block;
+  border-bottom: 3px solid lightgrey;
 }
 
-.btn-primary {
-  border-radius: 200px;
-  background-color: darkred;
-  border-color: darkred;
-  font-size: 20px;
-  box-shadow: 2px 7px #999;
+.news-letter button {
+  background-color: steelblue;
   
 }
 
-.btn-primary:hover {  
-    background-color: #F05F44;  
-    border-color: #F05F44;  
-    --bs-btn-hover-bg: #ee4b08; 
-    --bs-btn-hover-border-color: #ee4b08;
+.news-letter button:hover {
+  background-color: lightgrey;
+  color: black;
 }
 
-/*.btn-primary:hover {
-  background-color: #FF9191;
-  color: darkred;
-  border-color: darkred;
-  width: 300px;
-}*/
+.news-letter button:active {
+  background-color: lightgrey;
+  color: black;
+}
 
+h1 {
+  font-size: 5em;
+  text-shadow: 2px 4px lightgray;
+  text-align: center;
+}
 
-/* Extra styling. Possibly delete at the end of the project. */
-/*.btn-primary:active:after {
-  box-shadow: 0 2px #666;
-  color: yellow;
-  transform: translateY(1px);
-}*/
+/* footer content */
 
-/*.second-btn {
-  color: whitesmoke;
-  border-radius: 200px;
-  background-color: darkred;
-  border-color: darkred;
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-items li{
+  display: inline-block;
+  padding: 0 10px;
   font-size: 20px;
-  box-shadow: 2px 7px #999;
-  transition-property: transform;
-  transition-duration: 1000ms;
+  list-style-type: none;
+  border-right: 2px solid black;
+  line-height: 15px;
 }
 
-.second-btn:hover {
-  background-color: #FF9191;
-  color: darkred;
-  border-color: darkred;
-  transform: scale(1.1, 1.1);
+.footer-items li:last-child {
+  border-right: 0;
 }
-*/
 
+.footer-items li a {
+  color: steelblue;
+}
+
+/* Shop content */
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+
+
+/*.item-cards {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  height: 90%;
+  flex: 1;
+}*/
+
+.item-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.item-cards img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.shop {
+  margin-bottom: 10em;
+
+}
+
+.shop h2 {
+  display: inline-block;
+  margin: 5% 0 3% 50% ;
+  font-size: 4em;
+  border-bottom: 4px solid lightgrey;
+  text-align: center;
+}
