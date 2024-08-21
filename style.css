@@ -29,13 +29,13 @@ body {
 }
 
 .slideshow {
-  margin: 20px 50px 20px 10px;
+  margin: 20px 10px;
   flex: 2;
-/*  background-color: red;*/
-  border-right: 5px solid lightgrey;
-  border-bottom: 5px solid lightgrey;
-  padding-right: 5em;
-  padding-bottom: 4em;
+  background: #D4D2D2;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 1em 3em;
+  box-shadow: 2px 8px 12px black;
 
 }
 
@@ -149,7 +149,9 @@ footer {
 .shop-items {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px;
+/*  margin: 20px;*/
+  background: #D4D2D2;
+  padding: 1.5em;
 }
 
 
@@ -172,6 +174,8 @@ footer {
   margin: auto;
   text-align: center;
   font-family: arial;
+  background: whitesmoke;
+  box-shadow: 2px 5px 15px grey;
 }
 
 .price {
